@@ -1,0 +1,14 @@
+minimum_pre_commit_version: 3.3.0
+default_install_hook_types: [pre-commit, commit-msg]
+repos:
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 3.6.0
+    hooks:
+      - id: editorconfig-checker
+  - repo: https://github.com/espressif/conventional-precommit-linter
+    rev: v1.11.0
+    hooks:
+      - id: conventional-precommit-linter
+        stages: [commit-msg]
+        args:
+        - --subject-min-length=1
