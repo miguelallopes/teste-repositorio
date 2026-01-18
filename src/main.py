@@ -1,5 +1,8 @@
+def sub(x, y):
+    return x - y
+
 def main():
-    print("Hello from teste-repositorio!")
+    print(sub(5,1))
 
 
 if __name__ == "__main__":
