@@ -1,5 +1,5 @@
 def sub(x, y):
-    return x + y
+    return x - y
 
 def main():
     print(sub(5,1))
